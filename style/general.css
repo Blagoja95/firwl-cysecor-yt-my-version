@@ -61,6 +61,10 @@ section{
     text-decoration: underline;
 }
 
+.menu__item:visited{
+    color: var(--gray);
+}
+
 .menu__icon--social{
     text-decoration: none;
 }
@@ -70,12 +74,18 @@ section{
     letter-spacing: 1px;
 }
 
-
-
 .double-slash--gradient{
   
   font-weight: 700;
   margin-right: .2rem;
+}
+
+.text-gradient{
+    /* txt gradient */
+    background: -webkit-linear-gradient( rgba(92, 33, 239, 1),
+    rgba(53, 87, 246, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* BUTTON */
@@ -165,12 +175,6 @@ height: 5rem;
     position: relative;
     text-transform: uppercase;
     font-weight: 500;
-
-    /* txt gradient */
-    background: -webkit-linear-gradient( rgba(92, 33, 239, 1),
-    rgba(53, 87, 246, 1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* h2 */
