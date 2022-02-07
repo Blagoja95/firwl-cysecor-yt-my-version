@@ -1,0 +1,130 @@
+:root{
+    --main-footer:rgba(17, 22, 24, 1);
+    --white: #fff;
+    --gray: rgba(162, 164, 165);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.5rem;
+    line-height: 1;
+    font-family: her;
+    color: var(--gray);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVIGATION */
+
+.sos-line {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.menu--main{
+    background-color: var(--main-footer);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu--main::before{
+    content: "";
+    background-color: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6rem;
+    width: 15rem;
+    transform: translatex(-60%) rotate(45deg);
+}
+
+.sos-line-icon{
+    fill: var(--white);
+}
+.sos-line__first-msg{
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.sos-line__msg{
+    text-transform: uppercase;
+    word-spacing: -2px;
+}
+
+.secundery--menu{
+    background-color: var(--white);
+    height: 10rem;
+}
+
+.btn--free-quote{
+    width: 11rem;
+    height: 3.5rem;
+}
+
+.btn--free-quote::before{
+    background-color: var(--white);
+}
+
+/* HERO SECTION */
+.hero-section{
+    height: 60rem;
+    background-image: url(../images/header-home01-header.jpg);
+    background-size: cover;
+    background-position: 0% 40%;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero__inner{
+   width: 54rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.hero__inner::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: .5rem;
+    background-color: var(--white);
+}
+
+.heading__hero-title{
+    color: var(--white);
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.hero__paragraph{
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.hero__btn{
+    padding: 1.8rem 0rem;
+    width: 17rem;
+    height: 5rem;
+}
+
+/* SERVICES SECTION */
+.services{
+    height: 100rem;
+}
