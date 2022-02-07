@@ -1,7 +1,11 @@
 :root{
     --main-footer:rgba(17, 22, 24, 1);
     --white: #fff;
-    --gray: rgba(162, 164, 165);
+    --gray: rgba(160, 160, 160);
+    --linear-pink: rgba(92, 33, 239, 1);
+    --linear-blue: rgba(53, 87, 246, 1);
+    --card-color: rgb(50, 50, 50);
+
 }
 
 *{
@@ -126,5 +130,86 @@ body{
 
 /* SERVICES SECTION */
 .services{
-    height: 100rem;
+    height: 100rem;  
+}
+
+.services,
+.services__msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__msg{
+    gap: 1rem;
+}
+
+.our-services{
+    margin-top: 10rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* .our-services::before{
+    content: "";
+    padding-bottom: 1rem;
+    width: 5rem;
+    height: 1rem;
+    border: 1px dashed #999;
+} */
+
+.services__card{
+    width: 37rem;
+    height: 54rem;
+    gap: 2rem;
+}
+
+.services__card:hover{
+    background-image: 
+    linear-gradient(45deg, rgba(16, 5, 53, 1), rgba(21, 102, 171, 1));
+    transform: translateY(-5%);
+}
+
+.services__img{
+    height: 60%;
+}
+
+
+.services__heading{
+    margin-top: 2rem;
+    font-size:3.2rem;
+    color: var(--card-color);
+    text-transform: uppercase;
+}
+
+.services__paragraph--msg{
+    margin-top: .5rem;
+    font-size: 1.8rem;
+    width: 45ch;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.services__card--heading{
+    font-size: 2.4rem;
+    color: var(--white);
+    text-transform: uppercase;
+
+}
+
+.services__paragraph{
+    width: 30ch;
+    margin-left: 2rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+
+.bnt--service-card{
+    width: 14rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 2.5px solid var(--white);
+    color: var(--white);
 }

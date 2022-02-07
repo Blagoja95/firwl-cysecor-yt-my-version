@@ -3,6 +3,7 @@
     --gray: rgba(162, 164, 165);
     --linear-pink: rgba(92, 33, 239, 1);
     --linear-blue: rgba(53, 87, 246, 1);
+    --card-color: rgb(50, 50, 50);
 }
 
 *{
@@ -86,6 +87,9 @@ section{
     overflow: hidden;
     text-transform: uppercase;
     font-weight: 700;
+/* clip */
+-webkit-clip-path: polygon(100% 0px, 100.00% 73.43%, 92.18% 100%, 0px 100%, 0px 0px);
+ clip-path: polygon(100% 0px, 100.00% 73.43%, 92.18% 100%, 0px 100%, 0px 0px);
 }
 
 .btn:hover{
@@ -93,7 +97,7 @@ section{
     opacity: .5;
 }
 
-.btn::before{
+/* .btn::before{
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -102,10 +106,46 @@ section{
     right: 0;
     background-color: black;
     transform: translate(70%, 70%) rotate(40deg);
-}
+} */
 
 .bnt--linear-gradient{
     color: var(--white);
     background-image: linear-gradient(to right, var(--linear-pink), var(--linear-blue));
 }
 
+/* CARDS */
+
+.cards{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    /* position: relative; */
+    background-color: var(--card-color);
+    box-shadow: 0 0 0 1px rgba(50, 50, 50, 0.233);
+    overflow: hidden;
+    border: none;
+/* clip */
+    -webkit-clip-path: polygon(100% 0px, 100% 94.86%, 93.26% 100%, 0px 100%, 0px 0px);
+    clip-path: polygon(100% 0px, 100% 94.86%, 93.26% 100%, 0px 100%, 0px 0px);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* .card::before{
+position: absolute;
+content: "";
+bottom: 0;
+right: 0;
+transform: translate(60%, 60%)rotate(45deg);
+background-color: var(--white);
+width: 5rem;
+height: 5rem;
+} */
