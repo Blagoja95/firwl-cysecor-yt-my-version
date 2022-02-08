@@ -61,7 +61,7 @@ body{
 
 .sos-line__msg{
     text-transform: uppercase;
-    word-spacing: -2px;
+    word-spacing: -0.2rem;
 }
 
 .secundery--menu{
@@ -85,7 +85,6 @@ body{
 }
 
 .hero{
-    display: flex;
     justify-content: flex-start;
 }
 
@@ -131,9 +130,7 @@ body{
 }
 
 .services{
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .our-services{
@@ -166,7 +163,7 @@ body{
 
 
 .services__heading{
-    color: var(--card-color);
+    color: var(--card-color) !important;
 }
 
 .services__card--paragraph{
@@ -247,9 +244,9 @@ body{
 }
 
 .testimonials{
-    display: flex;
     justify-content: space-between;
 }
+
 .testimonial{
     position: relative;
     width: 27rem;
@@ -284,7 +281,7 @@ body{
     bottom: 0;
     left: 0;
     transform: translate(20%, -100%);
-    padding-left: 10px;
+    padding-left: 1rem;
     border-left: 3px solid var(--white);
 }
 
@@ -293,7 +290,7 @@ body{
     color: var(--white);
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
 }
 
 .testimonial__paragraph{
@@ -305,7 +302,23 @@ body{
 }
 
 /* ABOUT US SECTION */
-.about-us{
+.about-us--section{
     height: 73rem;
     background-image: url('../images/home-01-bg-video2.jpg');
+}
+
+.about-us{
+    width: 50%;
+}
+
+.about-us__title{
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    padding-bottom: .5rem;
+}
+
+.section-msg__heading{
+    color: var(--white);
+    line-height: 1.5;
 }

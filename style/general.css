@@ -16,7 +16,7 @@ html{
     font-size: 62.5%;
 }
 
-section{
+.flexbox{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,16 +36,11 @@ section{
 .menu{
     height: 6rem;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .menu__inner{
     max-width: 150rem;
     width: 90%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -129,7 +124,6 @@ section{
 .cards{
     margin-top: 5rem;
     width: 100%;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -190,4 +184,15 @@ height: 5rem;
     width: 45ch;
     text-align: center;
     line-height: 1.5;
+}
+
+/* Small card */
+.span-card{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    -webkit-clip-path: polygon(100% 0px, 100.00% 100.00%, 100% 64.86%, 73.26% 100%, 0px 100%, 0px 0px);
+    clip-path: polygon(100% 0px, 100.00% 100.00%, 100% 64.86%, 73.26% 100%, 0px 100%, 0px 0px);
+
 }
