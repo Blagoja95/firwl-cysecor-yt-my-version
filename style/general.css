@@ -196,3 +196,13 @@ height: 5rem;
     clip-path: polygon(100% 0px, 100.00% 100.00%, 100% 64.86%, 73.26% 100%, 0px 100%, 0px 0px);
 
 }
+
+/* LIST */
+
+.list{
+    list-style: none;
+}
+
+.list-item{
+margin-top: 2.2rem;
+}

@@ -309,16 +309,59 @@ body{
 
 .about-us{
     width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
+/* .about-us__container{
+    justify-content: space-between;
+} */
+
 .about-us__title{
+    width: 100%;
     text-transform: uppercase;
     color: var(--white);
     font-weight: 700;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dotted var(--card-color);
 }
 
-.section-msg__heading{
+.about-us__heading{
     color: var(--white);
-    line-height: 1.5;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+.bet-us{
+    display: block;
+}
+
+.about-us__paragraph{
+    width: 50ch;
+    text-align: left;
+    color: var(--white);
+}
+
+.about-us__item{
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 2px solid var(--white);
+}
+
+.about-us__list{
+    color: var(--white);
+    width: 50%;
+}
+
+
+.about-us__list-item{
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.about-us__ilustration{
+    transform:rotate3d(0, 1, 0, 180deg) scale(1.8);
 }
