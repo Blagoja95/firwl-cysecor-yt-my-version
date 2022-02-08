@@ -276,7 +276,7 @@ body{
 }
 
 .testimonial--4{
-    background-image: url('../images/testimonial--4__370x370.jpg');
+    background-image: url('../images/testimonial--4.jpg');
 }
 
 .testimonial__inner{
@@ -302,4 +302,10 @@ body{
     text-transform: uppercase;
     font-weight: 700;
 
+}
+
+/* ABOUT US SECTION */
+.about-us{
+    height: 73rem;
+    background-image: url('../images/home-01-bg-video2.jpg');
 }
