@@ -1,6 +1,7 @@
 :root{
     --main-footer:rgba(17, 22, 24, 1);
     --white: #fff;
+    --light-grey: #ddd;
     --gray: rgba(160, 160, 160);
     --linear-pink: rgba(92, 33, 239, 1);
     --linear-blue: rgba(53, 87, 246, 1);
@@ -204,6 +205,11 @@ body{
     color: var(--white);
 }
 
+.experience-safety::before{
+    transform: translate(90%, 1rem);
+
+}
+
 .how-it-works__video{
     background-image: url(../images/home-01-video.jpg);
     background-repeat: no-repeat;
@@ -252,12 +258,6 @@ body{
     width: 27rem;
     height: 37rem;
     background-position: center;
-}
-
-.testimonial__overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .testimonial--1{
@@ -364,4 +364,96 @@ body{
 
 .about-us__ilustration{
     transform:rotate3d(0, 1, 0, 180deg) scale(1.8);
+}
+
+/* SEMINAR SECTION */
+.seminar-section{
+    height: 96rem;
+}
+.seminar{
+    flex-direction: column;
+    gap: 6rem;    
+}
+
+.seminar__heading{
+    color: var(--card-color);
+}
+
+.training-seminars::before{
+    width: 6rem;
+    transform: translate(73%, 1rem);
+}
+
+.timer-box{
+    width: 100%;
+    height: 51.5rem;
+    background-image: url('../images/event-25060-1170x641.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+    -webkit-clip-path: polygon(100% 0px, 99.84% 90.00%, 96.26% 100%, 0px 100%, 0px 0px);
+    clip-path: polygon(100% 0px, 99.84% 90.00%, 96.26% 100%, 0px 100%, 0px 0px);
+}
+
+.timer-box__inner{
+    height: 100%;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.timer-box__title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.timer-box__inner{
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.timer__conference{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    -webkit-clip-path:     polygon(100% 0px, 100.00% 70.00%, 93% 99.86%, 73.26% 100%, 0px 100%, 0px 0px);
+    clip-path: polygon(100% 0px, 100.00% 70.00%, 93% 99.86%, 73.26% 100%, 0px 100%, 0px 0px);
+    text-align: center;
+    padding: .2rem;
+    margin-right: 1rem;
+}
+
+.timer-box__heading{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.timer-box__paragraph{
+    color: var(--light-grey);
+    text-transform: none;
+    line-height: 1.5;
+    width: 65ch;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.timer-box__event-timer-box{
+    width: 42rem;
+    height: 8rem;
+    border: 2px solid var(--white);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    background-image: url("../images/footer-field-bg2_OPT.png");
+}
+
+.timer__time-until-event{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.btn--timer-box{
+    width: 14.5rem;
+    height: 5rem;
+    padding: 1.8rem 0;
 }

@@ -116,9 +116,12 @@ html{
 
 .bnt--linear-gradient{
     color: var(--white);
-    background-image: linear-gradient(to right, var(--linear-pink), var(--linear-blue));
+    background-image: linear-gradient(120deg , var(--linear-pink), var(--linear-blue));
 }
 
+.btn--reverse-linear{
+    background-image: linear-gradient(to left, var(--linear-pink), var(--linear-blue));
+}
 /* CARDS */
 
 .cards{
@@ -144,6 +147,12 @@ html{
 
 }
 
+.card--overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* .card::before{
 position: absolute;
 content: "";
@@ -165,10 +174,23 @@ height: 5rem;
 
 
 .section-msg__first-paragraph{ 
+    position: relative;
     margin-top: 10rem;
     position: relative;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+.section-msg__first-paragraph::before{
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: .04rem;
+    border: 2px dashed var(--gray);
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, 1rem);
+    border-width: 1px;
 }
 
 /* h2 */
