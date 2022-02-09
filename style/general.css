@@ -122,6 +122,27 @@ html{
 .btn--reverse-linear{
     background-image: linear-gradient(to left, var(--linear-pink), var(--linear-blue));
 }
+
+.btn--border-only{
+    position: relative;
+    width: 14rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 2.5px solid var(--white);
+    color: var(--white);
+    overflow: hidden;
+}
+
+/* .btn--border-only::before{
+    position: absolute;
+    content: "";
+    border-top: 2.5px solid var(--white);
+    width: 100px;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    transform:rotate(45deg)translate(0%,0%);
+} */
 /* CARDS */
 
 .cards{
@@ -213,7 +234,7 @@ height: 5rem;
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    background-color: red;
+    background-color: var(--white);
     -webkit-clip-path: polygon(100% 0px, 100.00% 100.00%, 100% 64.86%, 73.26% 100%, 0px 100%, 0px 0px);
     clip-path: polygon(100% 0px, 100.00% 100.00%, 100% 64.86%, 73.26% 100%, 0px 100%, 0px 0px);
 
@@ -227,4 +248,10 @@ height: 5rem;
 
 .list-item{
 margin-top: 2.2rem;
+}
+
+/*  OTHER GENERAL ITEMS */
+.check-mark--green{
+    fill: green;
+    z-index: 1;
 }

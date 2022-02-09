@@ -2,6 +2,7 @@
     --main-footer:rgba(17, 22, 24, 1);
     --white: #fff;
     --light-grey: #ddd;
+    --ligtish-grey: #999;
     --gray: rgba(160, 160, 160);
     --linear-pink: rgba(92, 33, 239, 1);
     --linear-blue: rgba(53, 87, 246, 1);
@@ -134,10 +135,6 @@ body{
     flex-direction: column;
 }
 
-.our-services{
-    
-}
-
 /* .our-services::before{
     content: "";
     padding-bottom: 1rem;
@@ -182,17 +179,6 @@ body{
 
 }
 
-.services-msg--paragraph{
-}
-
-
-.bnt--service-card{
-    width: 14rem;
-    height: 3rem;
-    background-color: transparent;
-    border: 2.5px solid var(--white);
-    color: var(--white);
-}
 
 /* HOW IT WORKS SECTION */
 
@@ -324,7 +310,7 @@ body{
     color: var(--white);
     font-weight: 700;
     padding-bottom: 1rem;
-    border-bottom: 2px dotted var(--card-color);
+    border-bottom: 2px dotted var(--ligtish-grey);
 }
 
 .about-us__heading{
@@ -377,6 +363,10 @@ body{
 
 .seminar__heading{
     color: var(--card-color);
+}
+
+.training-seminars {
+    margin-top: 0rem;
 }
 
 .training-seminars::before{
@@ -456,4 +446,295 @@ body{
     width: 14.5rem;
     height: 5rem;
     padding: 1.8rem 0;
+}
+
+/* GET IN TOUCH */
+.get-in-touch-section{
+    /* position: relative; */
+    flex-direction: column;
+    /* gap: 15rem; */
+    justify-content: space-around;
+    height: 80rem;
+    background-image: url(../images/home2-bg-contacts.jpg);
+    background-repeat: repeat-y;
+    background-size: 1rem 1rem;
+    background-position: 0% 0%;
+    background-size: 100% 70rem;
+    background-position-y: 135%;
+}
+
+.get-in-touch-facts{
+ flex-direction: column;
+}
+
+.get-in-touch-facts__title,
+.get-in-touch-facts__subtitle{
+    color: var(--white);
+}
+
+.get-in-touch-facts__title{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.get-in-touch-facts__subtitle{
+    margin-top: 2rem;
+}
+
+.get-in-touch-info{
+    gap: 3rem;
+}
+
+.get-in-touch-info__heading{
+    color: white;
+    text-transform: capitalize;
+    width: 25ch;
+}
+
+.get-in-touch-info__title{
+    width: 75%;
+}
+.get-in-touch-info__grouping-box{
+    width: 100%;
+}
+.phone-number,
+.email{
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.phone-number__item,
+.email__item{
+    margin-top: 1rem;
+    color: var(--white);
+}
+/* .get-in-touch-info__heading{
+    font-size: 5rem;
+    text-transform: capitalize;
+} */
+
+/* form */
+
+.get-in-touch-form__inner{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: grid;
+    grid-template-rows: repeat(3, 4rem) 5rem repeat(3, 4rem);
+    grid-template-columns:  30rem 4rem 30rem;
+    row-gap: 1rem;
+}
+
+.your-msg-label{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.your-msg{
+    grid-column: 1/-1;
+    grid-row: 2/4;
+}
+
+.your-email-label{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.your-email{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.your-name-label{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+
+.your-name{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.your-phone-number-label{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.your-phone-number{
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.btn--form{
+    grid-column: 3/4;
+    grid-row: 7/8;
+    width: 100%;
+    height: 100%;
+
+    -webkit-clip-path: polygon(100% 0px, 100.00% 78.43%, 97.18% 100%, 0px 100%, 0px 0px);
+clip-path: polygon(100% 0px, 100.00% 78.43%, 97.18% 100%, 0px 100%, 0px 0px);
+}
+
+.your-msg-label,
+.your-email-label,
+.your-name-label,
+.your-phone-number-label{
+    align-self: flex-end;    
+}
+
+.form-overlay{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 45rem;
+    border: 1px solid #333;
+}
+
+/* PRICING PLAN SECTION */
+
+.pricing-section{
+    height: 110rem;
+}
+
+.pricing{
+    flex-direction: column;
+}
+
+.pricing__card{
+    width: 27rem;
+    height: 66rem;
+
+-webkit-clip-path: polygon(100% 0px, 100.37% 96.38%, 93.26% 100%, 0px 100%, 0px 0px);
+clip-path: polygon(100% 0px, 100.37% 96.38%, 93.26% 100%, 0px 100%, 0px 0px);
+}
+
+.pricing__card:hover{
+    height: 70rem;
+    background-image: 
+    linear-gradient(45deg, rgba(16, 5, 53, 1), rgba(21, 102, 171, 1));
+    cursor: pointer;
+}
+
+.price-box{
+    border-top: 5px dashed var(--ligtish-grey);
+    border-bottom: 5px dashed var(--ligtish-grey);
+    margin: 2rem 0;
+    padding: 1rem 7rem;
+    font-style: italic;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(5, 3rem);
+    grid-template-rows: repeat(2, 3rem);
+    column-gap: 0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-sign,
+.price-fraction,
+.time-of-lease{
+    font-size: 1.6rem;
+}
+
+.price,
+.value-sign,
+.price-fraction{
+    color: var(--white) !important;
+}
+
+.price{
+    font-size: 5rem;
+    grid-column: 2/4;
+    grid-row: 1/-1;
+}
+
+.value-sign{
+    font-size: 2rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.price-fraction{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.time-of-lease{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    font-size: 1.2rem;
+
+}
+.pricing-options{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-collapse: collapse;
+    padding: 2.5rem;
+    border-bottom: 1px solid var(--ligtish-grey);
+}
+
+.pricing__title{
+    font-size: 2.4rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.pricing__subtitle{
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+.pricing__option{
+    font-weight: 500;
+}
+
+.pricing__option--active{
+    color: #fff;
+}
+
+.bnt--pricing-card{
+    margin-top: 5rem;
+    width: 21rem;
+    height: 3.5rem;
+}
+
+/* TRIAL SECTION */
+
+.trial-section{
+    height: 52rem;
+    background-image: url('../images/footer-bg-purple_OP.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% 80%;
+    background-position-y: 240%;
+}
+
+.trial__inner{
+    z-index: 1;
+    background-image: url('../images/cta-decoration-margins_OPT.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80rem;
+    height: 27rem;
+}
+
+.trial__heading{
+    color: var(--white);
+    font-size: 4rem;
+}
+
+.trial__paragraph{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.trial__btn{
+    width: 14rem;
+    height: 5rem;
 }
